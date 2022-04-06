@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<q:quakeml xmlns:q="http://quakeml.org/xmlns/quakeml/1.2" xmlns="http://quakeml.org/xmlns/bed/1.2" xmlns:iris="http://service.iris.edu/fdsnws/event/1/" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://quakeml.org/schema/xsd http://quakeml.org/schema/xsd/QuakeML-1.2.xsd">
+    <eventParameters publicID="smi:service.iris.edu/fdsnws/event/1/query">
+        <event publicID="smi:service.iris.edu/fdsnws/event/1/query?eventid=11546922">
+            <type>earthquake</type>
+            <description iris:FEcode="90">
+                <type>Flinn-Engdahl region</type>
+                <text>PUERTO RICO REGION</text>
+            </description>
+            <preferredMagnitudeID>smi:service.iris.edu/fdsnws/event/1/query?magnitudeid=209334999</preferredMagnitudeID>
+            <preferredOriginID>smi:service.iris.edu/fdsnws/event/1/query?originid=46708186</preferredOriginID>
+            <origin publicID="smi:service.iris.edu/fdsnws/event/1/query?originid=46708186" iris:contributorOriginId="pr71343513" iris:contributor="pr" iris:contributorEventId="pr71343513" iris:catalog="NEIC PDE">
+                <time>
+                    <value>2022-04-06T01:24:14.440</value>
+                </time>
+                <creationInfo>
+                    <author>pr</author>
+                </creationInfo>
+                <latitude>
+                    <value>17.997667</value>
+                </latitude>
+                <longitude>
+                    <value>-66.836667</value>
+                </longitude>
+                <depth>
+                    <value>15390.0</value>
+                </depth>
+            </origin>
+            <magnitude publicID="smi:service.iris.edu/fdsnws/event/1/query?magnitudeid=209334999">
+                <mag>
+                    <value>2.08</value>
+                </mag>
+                <type>Md</type>
+                <creationInfo>
+                    <author>PR</author>
+                </creationInfo>
+            </magnitude>
+        </event>
+        <event publicID="smi:service.iris.edu/fdsnws/event/1/query?eventid=11546921">
+            <type>earthquake</type>
+            <description iris:FEcode="1">
+                <type>Flinn-Engdahl region</type>
+                <text>CENTRAL ALASKA</text>
+            </description>
+            <preferredMagnitudeID>smi:service.iris.edu/fdsnws/event/1/query?magnitudeid=209334963</preferredMagnitudeID>
+            <preferredOriginID>smi:service.iris.edu/fdsnws/event/1/query?originid=46708136</preferredOriginID>
+            <origin publicID="smi:service.iris.edu/fdsnws/event/1/query?originid=46708136" iris:contributorOriginId="ak0224esb4ar" iris:contributor="ak" iris:contributorEventId="ak0224esb4ar" iris:catalog="NEIC PDE">
+                <time>
+                    <value>2022-04-06T01:20:38.435</value>
+                </time>
+                <creationInfo>
+                    <author>ak</author>
+                </creationInfo>
+                <latitude>
+                    <value>62.7258</value>
+                </latitude>
+                <longitude>
+                    <value>-151.5843</value>
+                </longitude>
+                <depth>
+                    <value>3300.0</value>
+                </depth>
+            </origin>
+            <magnitude publicID="smi:service.iris.edu/fdsnws/event/1/query?magnitudeid=209334963">
+                <mag>
+                    <value>1.3</value>
+                </mag>
+                <type>ml</type>
+            </magnitude>
+        </event>
+        <event publicID="smi:service.iris.edu/fdsnws/event/1/query?eventid=11546919">
+            <type>earthquake</type>
+            <description iris:FEcode="1">
+                <type>Flinn-Engdahl region</type>
+                <text>CENTRAL ALASKA</text>
+            </description>
+            <preferredMagnitudeID>smi:service.iris.edu/fdsnws/event/1/query?magnitudeid=209334962</preferredMagnitudeID>
+            <preferredOriginID>smi:service.iris.edu/fdsnws/event/1/query?originid=46708043</preferredOriginID>
+            <origin publicID="smi:service.iris.edu/fdsnws/event/1/query?originid=46708043" iris:contributorOriginId="ak0224es8k31" iris:contributor="ak" iris:contributorEventId="ak0224es8k31" iris:catalog="NEIC PDE">
+                <time>
+                    <value>2022-04-06T01:08:43.126</value>
+                </time>
+                <creationInfo>
+                    <author>ak</author>
+                </creationInfo>
+                <latitude>
+                    <value>63.2669</value>
+                </latitude>
+                <longitude>
+                    <value>-151.1243</value>
+                </longitude>
+                <depth>
+                    <value>0.0</value>
+                </depth>
+            </origin>
+            <magnitude publicID="smi:service.iris.edu/fdsnws/event/1/query?magnitudeid=209334962">
+                <mag>
+                    <value>1.5</value>
+                </mag>
+                <type>ml</type>
+            </magnitude>
+        </event>
+    </eventParameters>
+</q:quakeml>
