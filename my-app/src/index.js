@@ -37,9 +37,9 @@ function GeoEvents(props) {
 
 class MapComponent extends React.Component {
     state = {
-        lat: 56.344253,
-        lng: 92.860483,
-        zoom: 5,
+        lat: 52.298415,
+        lng: 53.708968,
+        zoom: 7,
     };
 
     render() {
@@ -62,8 +62,8 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            startTime: new Date(),
-            endTime: new Date(),
+            startTime: new Date('2021-10-01T00:00:00'),
+            endTime: new Date('2021-10-31T23:59:59'),
             text : [],
             geoEvents :[],
         };
