@@ -1,10 +1,61 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import DateTimePicker from 'react-datetime-picker'
+import DateTimePicker from 'react-datetime-picker';
+import L from 'leaflet';
+import './Map.css';
+import { MapContainer, Marker, Popup, TileLayer, ScaleControl} from 'react-leaflet';
+
+function getEventInfoAsString(event) {
+    return `${event.type}\t` + `magnitude: ${event.magnitude}\t` + `time: ${event.time.toString()}\t` + `lat: ${event.latitude}\t` + `lon: ${event.longitude}\t`;
+}
+
+function getIcon(_iconSize) {
+    return L.icon({
+        iconUrl: require("./static\\earthquake_icon.png"),
+        iconSize: _iconSize,
+    });
+}
 
 function NewlineText(props) {
-    return props.items.map(str => <p>{str}</p>);
+    return props.items.map(geoEvent => <p>{getEventInfoAsString(geoEvent)}</p>);
+}
+
+L.Icon.Default.imagePath = "https://unpkg.com/leaflet@1.5.0/dist/images/";
+
+
+function GeoEvents(props) {
+    return props.geoEvents.map(geoEvent =>
+        <Marker position={[geoEvent.latitude, geoEvent.longitude]} icon={getIcon(20)}>
+            <Popup>
+                <p> Date: {geoEvent.time} </p>
+                <p> Magnitude: {geoEvent.magnitude} </p>
+                <p> lnt: {geoEvent.longitude} lat: {geoEvent.latitude}</p>
+            </Popup>
+        </Marker>);
+}
+
+
+class MapComponent extends React.Component {
+    state = {
+        lat: 56.344253,
+        lng: 92.860483,
+        zoom: 5,
+    };
+
+    render() {
+        let center = [this.state.lat, this.state.lng];
+
+        return (
+            <MapContainer zoom={this.state.zoom} center={center}>
+                <ScaleControl imperial={false}/>
+                <TileLayer
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <GeoEvents geoEvents={this.props.geoEvents} />
+            </MapContainer>
+        );
+    }
 }
 
 class App extends React.Component {
@@ -14,6 +65,7 @@ class App extends React.Component {
             startTime: new Date(),
             endTime: new Date(),
             text : [],
+            geoEvents :[],
         };
     }
 
@@ -88,8 +140,8 @@ class App extends React.Component {
         console.log("current state is: " + stTime + " :: " + enTime);
         if (this.state.startTime < this.state.endTime) {
             console.log("can make http request");
-            //const serverUrl = "http://84.237.89.72:8080/fdsnws/";
-            const serverUrl = "https://service.iris.edu/fdsnws/";
+            const serverUrl = "http://84.237.89.72:8080/fdsnws/";
+            // const serverUrl = "https://service.iris.edu/fdsnws/";
             let query = serverUrl + `event/1/query?starttime=${stTime}&endtime=${enTime}`+
                 `&limit=${limit}`;
 
@@ -120,17 +172,22 @@ class App extends React.Component {
 
                     let eventsInfo = [];
                     for (let i = 0; i < xmlDoc.getElementsByTagName("event").length; i++) {
-                        let eventType = xmlDoc.getElementsByTagName("event")[i].getElementsByTagName("type")[0].childNodes[0].nodeValue;
-                        let eventMagnitude = xmlDoc.getElementsByTagName("event")[i].getElementsByTagName("magnitude")[0].getElementsByTagName("mag")[0].getElementsByTagName("value")[0].childNodes[0].nodeValue;
+                        eventsInfo[i] = {};
+                        eventsInfo[i].type = xmlDoc.getElementsByTagName("event")[i].getElementsByTagName("type")[0].childNodes[0].nodeValue;
+                        eventsInfo[i].magnitude = xmlDoc.getElementsByTagName("event")[i].getElementsByTagName("magnitude")[0].getElementsByTagName("mag")[0].getElementsByTagName("value")[0].childNodes[0].nodeValue;
                         let coordInfo = xmlDoc.getElementsByTagName("event")[i].getElementsByTagName("origin")[0];
-                        let eventLatitude = coordInfo.getElementsByTagName("latitude")[0].getElementsByTagName("value")[0].childNodes[0].nodeValue;
-                        let eventLongitude = coordInfo.getElementsByTagName("longitude")[0].getElementsByTagName("value")[0].childNodes[0].nodeValue;
-                        let eventTime = coordInfo.getElementsByTagName("time")[0].getElementsByTagName("value")[0].childNodes[0].nodeValue;
-                        eventsInfo[i] = `${eventType}\t` + `magnitude: ${eventMagnitude}\t` + `time: ${eventTime.toString()}\t` + `lat: ${eventLatitude}\t` + `lon: ${eventLongitude}\t`;
+                        eventsInfo[i].latitude = coordInfo.getElementsByTagName("latitude")[0].getElementsByTagName("value")[0].childNodes[0].nodeValue;
+                        eventsInfo[i].longitude = coordInfo.getElementsByTagName("longitude")[0].getElementsByTagName("value")[0].childNodes[0].nodeValue;
+                        eventsInfo[i].time = coordInfo.getElementsByTagName("time")[0].getElementsByTagName("value")[0].childNodes[0].nodeValue;
+                    }
+
+                    let parsedInfo = [];
+                    for (let i = 0; i < eventsInfo.length; i++) {
+                        parsedInfo[i] = getEventInfoAsString(eventsInfo[i]);
                     }
 
                     this.setState({
-                        text: eventsInfo,
+                        geoEvents: eventsInfo,
                     })
                     console.log("text is updated");
                 })
@@ -146,12 +203,16 @@ class App extends React.Component {
     }
 
     render() {
+        const position = [51.505, -0.09];
         return (
             <div>
-                <p> start time: <DateTimePicker maxDetail="second"  value={this.state.startTime} onChange={this.onChangeStart} /> </p>
-                <p> end time: <DateTimePicker maxDetail="second"  value={this.state.endTime} onChange={this.onChangeEnd} /> </p>
-                <p> <button onClick={this.handleClick}> get info </button> </p>
-                <NewlineText items={this.state.text} />
+                <MapComponent geoEvents={this.state.geoEvents} />
+                <div>
+                    <p> start time: <DateTimePicker maxDetail="second"  value={this.state.startTime} onChange={this.onChangeStart} /> </p>
+                    <p> end time: <DateTimePicker maxDetail="second"  value={this.state.endTime} onChange={this.onChangeEnd} /> </p>
+                    <p> <button onClick={this.handleClick}> get info </button> </p>
+                    <NewlineText items={this.state.geoEvents} />
+                </div>
             </div>
         );
     }
