@@ -42,6 +42,7 @@
             <preferredMagnitudeID>smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021svnj/ml</preferredMagnitudeID>
             <type>earthquake</type>
         </event>
+
         <event publicID="smi:ippg_nsk.ippg.org/event/ipggsbrasippg2021iorn">
             <typeCertainty>known</typeCertainty>
             <creationInfo>
