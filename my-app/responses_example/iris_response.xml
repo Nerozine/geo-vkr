@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <q:quakeml xmlns:q="http://quakeml.org/xmlns/quakeml/1.2" xmlns="http://quakeml.org/xmlns/bed/1.2" xmlns:iris="http://service.iris.edu/fdsnws/event/1/" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://quakeml.org/schema/xsd http://quakeml.org/schema/xsd/QuakeML-1.2.xsd">
     <eventParameters publicID="smi:service.iris.edu/fdsnws/event/1/query">
+
         <event publicID="smi:service.iris.edu/fdsnws/event/1/query?eventid=11546922">
             <type>earthquake</type>
             <description iris:FEcode="90">
@@ -36,6 +37,8 @@
                 </creationInfo>
             </magnitude>
         </event>
+
+
         <event publicID="smi:service.iris.edu/fdsnws/event/1/query?eventid=11546921">
             <type>earthquake</type>
             <description iris:FEcode="1">
