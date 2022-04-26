@@ -14,6 +14,7 @@ export function App() {
     const [geoEvents, setGeoEvents] = useState([]);
     const [startTime, startTimeOnChange] = useState(new Date('2021-10-01T00:00:00'));
     const [endTime, endTimeOnChange] = useState(new Date('2021-10-31T23:59:59'));
+    const [popupsInteractivity, setPopupsInteractivity] = useState(true);
 
     function handleClick() {
         const stTime = convertDate(startTime);
@@ -58,8 +59,13 @@ export function App() {
 
     return (
         <div>
-            <MapComponent geoEvents={geoEvents}/>
+            <MapComponent geoEvents={geoEvents} popupsEnable={popupsInteractivity}/>
             <div>
+                <p>
+                    <input type="checkbox" id="popupsInteractivity" name="popupsInteractivity"
+                           onChange={() => setPopupsInteractivity(!popupsInteractivity)}/>
+                    <label htmlFor="popupsInteractivity">Disable pop-ups interactivity</label>
+                </p>
                 <p> events limit: <input type="number" id="events_limit" name="events_limit" min="1" max="300" defaultValue={10} /> </p>
                 <p> start time: <DateTimePicker maxDetail="second"  value={startTime} onChange={startTimeOnChange} /> </p>
                 <p> end time: <DateTimePicker maxDetail="second"  value={endTime} onChange={endTimeOnChange} /> </p>
