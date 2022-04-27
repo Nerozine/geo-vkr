@@ -2,6 +2,7 @@ import {MapContainer, ScaleControl, TileLayer} from "react-leaflet";
 import LeafletRuler from "../leaflet-ruler/code/LeafletRuler";
 import React from "react";
 import {GeoEvents} from "./GeoEvents";
+import {Stations} from "./Stations";
 
 export function MapComponent(props) {
     let center = {
@@ -18,6 +19,7 @@ export function MapComponent(props) {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <GeoEvents geoEvents={props.geoEvents} popupsEnable={props.popupsEnable}/>
+            <Stations show={props.showStations} stations={props.stations} popupsEnable={props.popupsEnable} />
             <LeafletRuler/>
         </MapContainer>
     );

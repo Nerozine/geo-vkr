@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.1">
+    <Source>SeisComP</Source>
+    <Created>2022-04-25T14:07:56.118848</Created>
+    <Network code="8b" startDate="1980-01-01T00:00:00">
+        <Description>Lena network</Description>
+    </Network>
+    <Network code="KA" startDate="1980-01-01T00:00:00">
+        <Description>Karachaganak network</Description>
+    </Network>
+</FDSNStationXML>

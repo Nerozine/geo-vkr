@@ -1,10 +1,11 @@
 import L from "leaflet";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {convertDate} from "./utility/date_work";
 import {MapComponent} from "./MapComponents/MapComponent";
 import DateTimePicker from "react-datetime-picker";
 import {NewlineText} from "./MapComponents/DebugComponents";
 import {parseEvents} from "./utility/query_parse";
+import {getStations} from "./utility/queries";
 
 L.Icon.Default.imagePath = "https://unpkg.com/leaflet@1.5.0/dist/images/";
 
@@ -12,9 +13,12 @@ export function App() {
     const serverUrl = "http://84.237.89.72:8080/fdsnws/";
     // const serverUrl = "https://service.iris.edu/fdsnws/";
     const [geoEvents, setGeoEvents] = useState([]);
+    const [stations, setStations] = useState([]);
     const [startTime, startTimeOnChange] = useState(new Date('2021-10-01T00:00:00'));
     const [endTime, endTimeOnChange] = useState(new Date('2021-10-31T23:59:59'));
     const [popupsInteractivity, setPopupsInteractivity] = useState(true);
+    const [showStations, setShowStations] = useState(true);
+    useEffect(() => getStations("", setStations), []);
 
     function handleClick() {
         const stTime = convertDate(startTime);
@@ -59,12 +63,15 @@ export function App() {
 
     return (
         <div>
-            <MapComponent geoEvents={geoEvents} popupsEnable={popupsInteractivity}/>
+            <MapComponent geoEvents={geoEvents} stations={stations} popupsEnable={popupsInteractivity} showStations={showStations}/>
             <div>
                 <p>
                     <input type="checkbox" id="popupsInteractivity" name="popupsInteractivity"
                            onChange={() => setPopupsInteractivity(!popupsInteractivity)}/>
                     <label htmlFor="popupsInteractivity">Disable pop-ups interactivity</label>
+                    <input type="checkbox" id="showStations" name="showStations"
+                           onChange={() => setShowStations(!showStations)}/>
+                    <label htmlFor="showStations">Hide stations</label>
                 </p>
                 <p> events limit: <input type="number" id="events_limit" name="events_limit" min="1" max="300" defaultValue={10} /> </p>
                 <p> start time: <DateTimePicker maxDetail="second"  value={startTime} onChange={startTimeOnChange} /> </p>

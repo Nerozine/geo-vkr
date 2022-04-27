@@ -45,3 +45,31 @@ export function parseEvents(data) {
 
     return events;
 }
+
+export function parseStations(data) {
+    let parser;
+    let xmlDoc;
+    if (window.DOMParser) {
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(data.toString(), "text/xml");
+    }
+    else {
+        console.log("can't parse response");
+        return [];
+    }
+
+    let stations = [];
+    let stationsXML = xmlDoc.getElementsByTagName("Station");
+    for (let i = 0; i < stationsXML.length; i++) {
+        stations[i] = {};
+        stations[i].latitude = stationsXML[i].getElementsByTagName("Latitude")[0]
+                                    .childNodes[0].nodeValue;
+        stations[i].longitude = stationsXML[i].getElementsByTagName("Longitude")[0]
+                                    .childNodes[0].nodeValue;
+        stations[i].elevation = stationsXML[i].getElementsByTagName("Elevation")[0]
+                                    .childNodes[0].nodeValue;
+        stations[i].code = stationsXML[i].getAttribute("code");
+    }
+
+    return stations;
+}
