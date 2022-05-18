@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<q:quakeml xmlns="http://quakeml.org/xmlns/bed/1.2" xmlns:q="http://quakeml.org/xmlns/quakeml/1.2">
+    <eventParameters publicID="smi:org.gfz-potsdam.de/geofon/EventParameters">
+
+        <event publicID="smi:ippg_nsk.ippg.org/event/ipggsbrasippg2021gczgx">
+            <typeCertainty>known</typeCertainty>
+            <creationInfo>
+                <agencyID>IPGGSBRAS</agencyID>
+                <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+            </creationInfo>
+            <magnitude publicID="smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021gczgx/ml">
+                <creationInfo>
+                    <agencyID>ipggsbras</agencyID>
+                    <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+                </creationInfo>
+                <mag>
+                    <value>3.4</value>
+                </mag>
+                <type>ml</type>
+                <originID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021gczgx</originID>
+            </magnitude>
+            <origin publicID="smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021gczgx">
+                <time>
+                    <value>2021-10-27T03:52:50.1358Z</value>
+                    <uncertainty>0.026182</uncertainty>
+                </time>
+                <longitude>
+                    <value>53.3437</value>
+                </longitude>
+                <latitude>
+                    <value>51.3402</value>
+                </latitude>
+                <depthType>from location</depthType>
+                <creationInfo>
+                    <agencyID>IPGGSBRAS</agencyID>
+                    <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+                </creationInfo>
+                <depth>
+                    <value>4562</value>
+                    <uncertainty>410.465</uncertainty>
+                </depth>
+            </origin>
+            <preferredOriginID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021gczgx</preferredOriginID>
+            <preferredMagnitudeID>smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021gczgx/ml</preferredMagnitudeID>
+            <type>earthquake</type>
+        </event>
+
+        <event publicID="smi:ippg_nsk.ippg.org/event/ipggsbrasippg2021inber">
+            <typeCertainty>known</typeCertainty>
+            <creationInfo>
+                <agencyID>IPGGSBRAS</agencyID>
+                <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+            </creationInfo>
+            <magnitude publicID="smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021inber/ml">
+                <creationInfo>
+                    <agencyID>ipggsbras</agencyID>
+                    <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+                </creationInfo>
+                <mag>
+                    <value>1.3</value>
+                </mag>
+                <type>ml</type>
+                <originID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021inber</originID>
+            </magnitude>
+            <origin publicID="smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021inber">
+                <time>
+                    <value>2021-10-26T19:45:03.056Z</value>
+                    <uncertainty>0.122826</uncertainty>
+                </time>
+                <longitude>
+                    <value>53.2169</value>
+                </longitude>
+                <latitude>
+                    <value>51.3369</value>
+                </latitude>
+                <depthType>from location</depthType>
+                <creationInfo>
+                    <agencyID>IPGGSBRAS</agencyID>
+                    <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+                </creationInfo>
+                <depth>
+                    <value>3981</value>
+                    <uncertainty>1040.36</uncertainty>
+                </depth>
+            </origin>
+            <preferredOriginID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021inber</preferredOriginID>
+            <preferredMagnitudeID>smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021inber/ml</preferredMagnitudeID>
+            <type>earthquake</type>
+        </event>
+        <event publicID="smi:ippg_nsk.ippg.org/event/ipggsbrasippg2021tyzyj">
+            <typeCertainty>known</typeCertainty>
+            <creationInfo>
+                <agencyID>IPGGSBRAS</agencyID>
+                <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+            </creationInfo>
+            <magnitude publicID="smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021tyzyj/ml">
+                <creationInfo>
+                    <agencyID>ipggsbras</agencyID>
+                    <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+                </creationInfo>
+                <mag>
+                    <value>0.8</value>
+                </mag>
+                <type>ml</type>
+                <originID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021tyzyj</originID>
+            </magnitude>
+            <origin publicID="smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021tyzyj">
+                <time>
+                    <value>2021-10-10T13:25:51.5405Z</value>
+                    <uncertainty>0.0607366</uncertainty>
+                </time>
+                <longitude>
+                    <value>53.3448</value>
+                </longitude>
+                <latitude>
+                    <value>51.3397</value>
+                </latitude>
+                <depthType>from location</depthType>
+                <creationInfo>
+                    <agencyID>IPGGSBRAS</agencyID>
+                    <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+                </creationInfo>
+                <depth>
+                    <value>4333</value>
+                    <uncertainty>329.386</uncertainty>
+                </depth>
+            </origin>
+            <preferredOriginID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021tyzyj</preferredOriginID>
+            <preferredMagnitudeID>smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021tyzyj/ml</preferredMagnitudeID>
+            <type>earthquake</type>
+        </event>
+        <event publicID="smi:ippg_nsk.ippg.org/event/ipggsbrasippg2021oknts">
+            <typeCertainty>known</typeCertainty>
+            <creationInfo>
+                <agencyID>IPGGSBRAS</agencyID>
+                <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+            </creationInfo>
+            <magnitude publicID="smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021oknts/ml">
+                <creationInfo>
+                    <agencyID>ipggsbras</agencyID>
+                    <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+                </creationInfo>
+                <mag>
+                    <value>1.7</value>
+                </mag>
+                <type>ml</type>
+                <originID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021oknts</originID>
+            </magnitude>
+            <origin publicID="smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021oknts">
+                <time>
+                    <value>2021-10-10T04:31:57.2122Z</value>
+                    <uncertainty>0.051658</uncertainty>
+                </time>
+                <longitude>
+                    <value>53.3479</value>
+                </longitude>
+                <latitude>
+                    <value>51.3386</value>
+                </latitude>
+                <depthType>from location</depthType>
+                <creationInfo>
+                    <agencyID>IPGGSBRAS</agencyID>
+                    <creationTime>2022-04-30T17:15:00.0000Z</creationTime>
+                </creationInfo>
+                <depth>
+                    <value>4060</value>
+                    <uncertainty>908.02</uncertainty>
+                </depth>
+            </origin>
+            <preferredOriginID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021oknts</preferredOriginID>
+            <preferredMagnitudeID>smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021oknts/ml</preferredMagnitudeID>
+            <type>earthquake</type>
+        </event>
+        <event publicID="smi:ippg_nsk.ippg.org/event/ipggsbrasippg2021vnkli">
+            <typeCertainty>known</typeCertainty>
+            <creationInfo>
+                <agencyID>IPGGSBRAS</agencyID>
+                <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+            </creationInfo>
+            <magnitude publicID="smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021vnkli/ml">
+                <creationInfo>
+                    <agencyID>ipggsbras</agencyID>
+                    <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+                </creationInfo>
+                <mag>
+                    <value>2.5</value>
+                </mag>
+                <type>ml</type>
+                <originID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021vnkli</originID>
+            </magnitude>
+            <origin publicID="smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021vnkli">
+                <time>
+                    <value>2021-10-08T18:00:29.4148Z</value>
+                    <uncertainty>0.0226344</uncertainty>
+                </time>
+                <longitude>
+                    <value>53.3359</value>
+                </longitude>
+                <latitude>
+                    <value>51.343</value>
+                </latitude>
+                <depthType>from location</depthType>
+                <creationInfo>
+                    <agencyID>IPGGSBRAS</agencyID>
+                    <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+                </creationInfo>
+                <depth>
+                    <value>4763</value>
+                    <uncertainty>303.841</uncertainty>
+                </depth>
+            </origin>
+            <preferredOriginID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021vnkli</preferredOriginID>
+            <preferredMagnitudeID>smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021vnkli/ml</preferredMagnitudeID>
+            <type>earthquake</type>
+        </event>
+        <event publicID="smi:ippg_nsk.ippg.org/event/ipggsbrasippg2021zrdos">
+            <typeCertainty>known</typeCertainty>
+            <creationInfo>
+                <agencyID>IPGGSBRAS</agencyID>
+                <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+            </creationInfo>
+            <magnitude publicID="smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021zrdos/ml">
+                <creationInfo>
+                    <agencyID>ipggsbras</agencyID>
+                    <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+                </creationInfo>
+                <mag>
+                    <value>1.6</value>
+                </mag>
+                <type>ml</type>
+                <originID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021zrdos</originID>
+            </magnitude>
+            <origin publicID="smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021zrdos">
+                <time>
+                    <value>2021-10-08T14:56:34.0628Z</value>
+                    <uncertainty>0.171626</uncertainty>
+                </time>
+                <longitude>
+                    <value>53.3192</value>
+                </longitude>
+                <latitude>
+                    <value>51.3347</value>
+                </latitude>
+                <depthType>from location</depthType>
+                <creationInfo>
+                    <agencyID>IPGGSBRAS</agencyID>
+                    <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+                </creationInfo>
+                <depth>
+                    <value>4571</value>
+                    <uncertainty>459.559</uncertainty>
+                </depth>
+            </origin>
+            <preferredOriginID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021zrdos</preferredOriginID>
+            <preferredMagnitudeID>smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021zrdos/ml</preferredMagnitudeID>
+            <type>earthquake</type>
+        </event>
+        <event publicID="smi:ippg_nsk.ippg.org/event/ipggsbrasippg2021seqpg">
+            <typeCertainty>known</typeCertainty>
+            <creationInfo>
+                <agencyID>IPGGSBRAS</agencyID>
+                <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+            </creationInfo>
+            <magnitude publicID="smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021seqpg/ml">
+                <creationInfo>
+                    <agencyID>ipggsbras</agencyID>
+                    <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+                </creationInfo>
+                <mag>
+                    <value>2.4</value>
+                </mag>
+                <type>ml</type>
+                <originID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021seqpg</originID>
+            </magnitude>
+            <origin publicID="smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021seqpg">
+                <time>
+                    <value>2021-10-05T21:00:46.1953Z</value>
+                    <uncertainty>0.0322658</uncertainty>
+                </time>
+                <longitude>
+                    <value>53.3279</value>
+                </longitude>
+                <latitude>
+                    <value>51.3347</value>
+                </latitude>
+                <depthType>from location</depthType>
+                <creationInfo>
+                    <agencyID>IPGGSBRAS</agencyID>
+                    <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+                </creationInfo>
+                <depth>
+                    <value>4471</value>
+                    <uncertainty>386.326</uncertainty>
+                </depth>
+            </origin>
+            <preferredOriginID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021seqpg</preferredOriginID>
+            <preferredMagnitudeID>smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021seqpg/ml</preferredMagnitudeID>
+            <type>earthquake</type>
+        </event>
+        <event publicID="smi:ippg_nsk.ippg.org/event/ipggsbrasippg2021zuyif">
+            <typeCertainty>known</typeCertainty>
+            <creationInfo>
+                <agencyID>IPGGSBRAS</agencyID>
+                <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+            </creationInfo>
+            <magnitude publicID="smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021zuyif/ml">
+                <creationInfo>
+                    <agencyID>ipggsbras</agencyID>
+                    <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+                </creationInfo>
+                <mag>
+                    <value>2.1</value>
+                </mag>
+                <type>ml</type>
+                <originID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021zuyif</originID>
+            </magnitude>
+            <origin publicID="smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021zuyif">
+                <time>
+                    <value>2021-10-04T06:13:27.1285Z</value>
+                    <uncertainty>0.0725515</uncertainty>
+                </time>
+                <longitude>
+                    <value>53.3416</value>
+                </longitude>
+                <latitude>
+                    <value>51.336</value>
+                </latitude>
+                <depthType>from location</depthType>
+                <creationInfo>
+                    <agencyID>IPGGSBRAS</agencyID>
+                    <creationTime>2022-04-30T17:14:59.0000Z</creationTime>
+                </creationInfo>
+                <depth>
+                    <value>4038</value>
+                    <uncertainty>563.709</uncertainty>
+                </depth>
+            </origin>
+            <preferredOriginID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021zuyif</preferredOriginID>
+            <preferredMagnitudeID>smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021zuyif/ml</preferredMagnitudeID>
+            <type>earthquake</type>
+        </event>
+        <event publicID="smi:ippg_nsk.ippg.org/event/ipggsbrasippg2021pawad">
+            <typeCertainty>known</typeCertainty>
+            <creationInfo>
+                <agencyID>IPGGSBRAS</agencyID>
+                <creationTime>2022-04-30T17:14:58.0000Z</creationTime>
+            </creationInfo>
+            <magnitude publicID="smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021pawad/ml">
+                <creationInfo>
+                    <agencyID>ipggsbras</agencyID>
+                    <creationTime>2022-04-30T17:14:58.0000Z</creationTime>
+                </creationInfo>
+                <mag>
+                    <value>0.6</value>
+                </mag>
+                <type>ml</type>
+                <originID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021pawad</originID>
+            </magnitude>
+            <origin publicID="smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021pawad">
+                <time>
+                    <value>2021-10-01T17:38:46.4351Z</value>
+                    <uncertainty>0.092679</uncertainty>
+                </time>
+                <longitude>
+                    <value>53.3585</value>
+                </longitude>
+                <latitude>
+                    <value>51.3265</value>
+                </latitude>
+                <depthType>from location</depthType>
+                <creationInfo>
+                    <agencyID>IPGGSBRAS</agencyID>
+                    <creationTime>2022-04-30T17:14:58.0000Z</creationTime>
+                </creationInfo>
+                <depth>
+                    <value>4793</value>
+                    <uncertainty>517.764</uncertainty>
+                </depth>
+            </origin>
+            <preferredOriginID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021pawad</preferredOriginID>
+            <preferredMagnitudeID>smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021pawad/ml</preferredMagnitudeID>
+            <type>earthquake</type>
+        </event>
+        <event publicID="smi:ippg_nsk.ippg.org/event/ipggsbrasippg2021aomcy">
+            <typeCertainty>known</typeCertainty>
+            <creationInfo>
+                <agencyID>IPGGSBRAS</agencyID>
+                <creationTime>2022-04-30T17:14:58.0000Z</creationTime>
+            </creationInfo>
+            <magnitude publicID="smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021aomcy/ml">
+                <creationInfo>
+                    <agencyID>ipggsbras</agencyID>
+                    <creationTime>2022-04-30T17:14:58.0000Z</creationTime>
+                </creationInfo>
+                <mag>
+                    <value>1.5</value>
+                </mag>
+                <type>ml</type>
+                <originID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021aomcy</originID>
+            </magnitude>
+            <origin publicID="smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021aomcy">
+                <time>
+                    <value>2021-10-01T04:54:07.268Z</value>
+                    <uncertainty>0.210857</uncertainty>
+                </time>
+                <longitude>
+                    <value>53.2162</value>
+                </longitude>
+                <latitude>
+                    <value>51.3364</value>
+                </latitude>
+                <depthType>from location</depthType>
+                <creationInfo>
+                    <agencyID>IPGGSBRAS</agencyID>
+                    <creationTime>2022-04-30T17:14:58.0000Z</creationTime>
+                </creationInfo>
+                <depth>
+                    <value>3474</value>
+                    <uncertainty>1544.11</uncertainty>
+                </depth>
+            </origin>
+            <preferredOriginID>smi:ippg_nsk.ippg.org/origin/ipggsbrasippg2021aomcy</preferredOriginID>
+            <preferredMagnitudeID>smi:ippg_nsk.ippg.org/magnitude/ipggsbrasippg2021aomcy/ml</preferredMagnitudeID>
+            <type>earthquake</type>
+        </event>
+    </eventParameters>
+</q:quakeml>

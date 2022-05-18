@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.1">
+    <Source>SeisComP</Source>
+    <Created>2022-04-30T10:36:43.757247</Created>
+    <Network code="8b" startDate="1980-01-01T00:00:00">
+        <Description>Lena network</Description>
+        <Station code="LD010" startDate="1980-01-01T00:00:00">
+            <Latitude>72.3261</Latitude>
+            <Longitude>125.7601</Longitude>
+            <Elevation>42.38080597</Elevation>
+            <Site>
+                <Name>LD010</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="LD011" startDate="1980-01-01T00:00:00">
+            <Latitude>72.4762</Latitude>
+            <Longitude>126.2749</Longitude>
+            <Elevation>59.55894852</Elevation>
+            <Site>
+                <Name>LD011</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="LD015" startDate="1980-01-01T00:00:00">
+            <Latitude>72.1173</Latitude>
+            <Longitude>126.9817</Longitude>
+            <Elevation>46.79605865</Elevation>
+            <Site>
+                <Name>LD015</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="LD018" startDate="1980-01-01T00:00:00">
+            <Latitude>71.9293</Latitude>
+            <Longitude>127.3126</Longitude>
+            <Elevation>22.78888702</Elevation>
+            <Site>
+                <Name>LD018</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="LD019" startDate="1980-01-01T00:00:00">
+            <Latitude>72.075</Latitude>
+            <Longitude>128.3248</Longitude>
+            <Elevation>42.01094437</Elevation>
+            <Site>
+                <Name>LD019</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="LD033" startDate="1980-01-01T00:00:00">
+            <Latitude>72.4031</Latitude>
+            <Longitude>126.7969</Longitude>
+            <Elevation>64.1481781</Elevation>
+            <Site>
+                <Name>LD033</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="LD042" startDate="1980-01-01T00:00:00">
+            <Latitude>72.2874</Latitude>
+            <Longitude>126.1886</Longitude>
+            <Elevation>30.80879593</Elevation>
+            <Site>
+                <Name>LD042</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="SAM01" startDate="1980-01-01T00:00:00">
+            <Latitude>72.3888</Latitude>
+            <Longitude>126.4876</Longitude>
+            <Elevation>11.71389198</Elevation>
+            <Site>
+                <Name>SAM01</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="SAM02" startDate="1980-01-01T00:00:00">
+            <Latitude>72.3814</Latitude>
+            <Longitude>126.5106</Longitude>
+            <Elevation>13.27836227</Elevation>
+            <Site>
+                <Name>SAM02</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="SAM03" startDate="1980-01-01T00:00:00">
+            <Latitude>72.3782</Latitude>
+            <Longitude>126.48</Longitude>
+            <Elevation>13.08290672</Elevation>
+            <Site>
+                <Name>SAM03</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="SML01" startDate="1980-01-01T00:00:00">
+            <Latitude>72.2903</Latitude>
+            <Longitude>126.1843</Longitude>
+            <Elevation>21.7124157</Elevation>
+            <Site>
+                <Name>SML01</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="SML03" startDate="1980-01-01T00:00:00">
+            <Latitude>72.4022</Latitude>
+            <Longitude>126.7938</Longitude>
+            <Elevation>102.5924606</Elevation>
+            <Site>
+                <Name>SML03</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+    </Network>
+    <Network code="KA" startDate="1980-01-01T00:00:00">
+        <Description>Karachaganak network</Description>
+        <Station code="ST001" startDate="1980-01-01T00:00:00">
+            <Latitude>51.342</Latitude>
+            <Longitude>53.154</Longitude>
+            <Elevation>90</Elevation>
+            <Site>
+                <Name>ST001</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="ST002" startDate="1980-01-01T00:00:00">
+            <Latitude>51.3786</Latitude>
+            <Longitude>53.1917</Longitude>
+            <Elevation>70</Elevation>
+            <Site>
+                <Name>ST002</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="ST003" startDate="1980-01-01T00:00:00">
+            <Latitude>51.2881</Latitude>
+            <Longitude>53.2004</Longitude>
+            <Elevation>94</Elevation>
+            <Site>
+                <Name>ST003</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="ST004" startDate="1980-01-01T00:00:00">
+            <Latitude>51.2348</Latitude>
+            <Longitude>53.2863</Longitude>
+            <Elevation>106</Elevation>
+            <Site>
+                <Name>ST004</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="ST005" startDate="1980-01-01T00:00:00">
+            <Latitude>51.3752</Latitude>
+            <Longitude>53.4587</Longitude>
+            <Elevation>60</Elevation>
+            <Site>
+                <Name>ST005</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="ST006" startDate="1980-01-01T00:00:00">
+            <Latitude>51.3595</Latitude>
+            <Longitude>53.3528</Longitude>
+            <Elevation>69</Elevation>
+            <Site>
+                <Name>ST006</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+        <Station code="ST007" startDate="1980-01-01T00:00:00">
+            <Latitude>51.2866</Latitude>
+            <Longitude>53.3887</Longitude>
+            <Elevation>96</Elevation>
+            <Site>
+                <Name>ST007</Name>
+            </Site>
+            <CreationDate>1980-01-01T00:00:00</CreationDate>
+        </Station>
+    </Network>
+</FDSNStationXML>

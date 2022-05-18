@@ -15,7 +15,8 @@ export function Stations(props) {
             <Marker position={[station.latitude, station.longitude]} icon={getStationIcon(20)}>
                 <>{props.popupsEnable === true &&
                     <Popup>
-                        <p> Code: {station.code} </p>
+                        <p> Station code: {station.code} </p>
+                        <p> Network code: {station.networkCode} </p>
                         <p> longitude: {station.longitude} latitude: {station.latitude} </p>
                         <p> elevation: {station.elevation} </p>
                     </Popup>
